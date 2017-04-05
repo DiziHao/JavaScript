@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.d1{
+    float: right;
+    position: absolute;
+    bottom: 500px;
+    left: 200px;
+
+}
+.d2{
+    float: right;
+    position: absolute;
+    bottom: 400px;
+    left: 300px;
+}
