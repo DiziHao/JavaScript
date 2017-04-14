@@ -1,0 +1,35 @@
+#one{
+    width:1024px;
+    height:591px;
+    background: black;
+}
+.two {
+    width:933px;
+    height:53px;
+    background: blue;
+    margin-left: 44px;
+    /*margin-top: 14px;*/
+    /*padding-bottom: 14px;*/
+}
+.two_one {
+    float: right;
+}
+.two
+.three {
+    width:933px;
+    height:57px;
+    background: yellow;
+    margin-left: 44px;;
+}
+.four {
+    width:933px;
+    height:42px;
+    background:purple;
+    margin-left: 44px;;
+}
+.six {
+    width:933px;
+    height:339px;
+    background: red;
+    margin-left: 44px;;
+}

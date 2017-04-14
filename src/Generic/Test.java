@@ -5,17 +5,19 @@ import java.util.Date;
 /**
  * Created by 邸子豪 on 2017/4/13.
  */
-public class Test<T> {
+//public class Test<T> {
+public class Test<S extends CharSequence>{
     //generic 通用的\泛型 泛化的类型
     //general 一般
     public static void main(String[] args) {
-        Test test = new Test();
-        System.out.println(test.concat(1,2));
-        System.out.println(test.concat(1.2,3.4));
-        System.out.println(test.concat(new Date(),new Date()));
+//        Test test = new Test();
+//        System.out.println(test.concat(1,2));
+//        System.out.println(test.concat(1.2,3.4));
+//        System.out.println(test.concat(new Date(),new Date()));
+
     }
-    private String concat(T x,T y) {
-        return String.valueOf(x).concat(String.valueOf(y));
-    }
+//    private String concat(T x,T y) {
+//        return String.valueOf(x).concat(String.valueOf(y));//3种输出值
+//    }
 
 }
