@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <div id="box">
+       <input type="button"value="-"id="btn">
+       <input type="text"value="1"id="numder">
+       <input type="button"value="+"id="addBtn">
+       单价：<span id="unit_price">120.70</span>
+       总价：<span id="total_price">120.70</span>
+   </div>
+   <script>
+       var btn=document.getElementById('btn'),
+           numder=document.getElementById('numder'),
+           addBtn=document.getElementById('addBtn'),
+           unit_price=document.getElementById('unit_price').innerHTML,
+           total_price=document.getElementById('total_price');
+       addBtn.onclick=function () {
+           var num =++ numder.value;
+           total_price.innerHTML=(num*unit_price).toFixed(2);
+       }
+       btn.onclick=function () {
+           var num1=numder.value;
+           console.log(num1);
+           if (num1<=1) {
+               num1=1
+           }else {
+               num1=--numder.value;
+               total_price.innerHTML=(num1*unit_price).toFixed(2)
+           }
+       }
+   </script>
+</body>
+</html>
