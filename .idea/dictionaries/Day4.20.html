@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding: 0;list-style: none;}
+        #box {
+            width:200px;
+            height:100px;
+            background: black;
+            overflow: hidden;
+            margin: 40px auto;
+        }
+        #con {
+            width:600px;
+            height:100px;
+        }
+        #con li {
+            width:200px;
+            height:100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul id="con">
+        <li style="background: yellow"></li>
+        <li style="background: blue"></li>
+        <li style="background: burlywood"></li>
+    </ul>
+</div>
+<script>
+    var lis=document.getElementById("con");
+    function aa() {
+        //获取ul的marginLeft
+        //parseInt强制转换成整数
+        var cleft=parseInt(con.style.marginLeft);
+        if (!cleft) {
+            cleft=0;
+        }
+        if (cleft>-400) {//循环一次所有图片的width
+            con.style.marginLeft=cleft-1+'px'
+        }else {
+            con.style.marginLeft=0;//已经循环一次强制等于0
+        }
+    }
+    setInterval(aa,30);
+</script>
+</body>
+</html>
