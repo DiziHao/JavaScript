@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var patt = /[abc123ASD]/g;
+        console.log('dancsjkdSFf1655n89f'.match(patt));
+        var patt1 = /[^abc]/g;
+        console.log('abcsabckjas231'.match(patt1));
+        var patt2 = /[^0-9]/g;
+        console.log('ascDf123'.match(patt2));
+        patt2.compile('(red|green|blue)','gi');
+        console.log('redGreenbBlue'.match(patt2));
+        patt2.compile('[\u4e00-\u9fbb]','ig');//64+4 \u4e00-\u9fbb所有汉字的意思
+        console.log('acaa-萨达是惨啊'.match(patt2));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
